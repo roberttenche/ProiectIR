@@ -22,7 +22,7 @@ Pe șasiu sunt montate toate componentele.
 Master-ul controlează modulul roților.  
 EBS-ul controlează cei 2 senzori ultrasonici montați în față și în spatele mașinii.  
 EBS-ul trimite constat mesaje pe CAN în care se raportează dacă urmează o coliziune sau nu.  
-Mesajul constă în 8 bytes ( 2 folosiți 6 nefolosiți ).  
+Mesajul constă în 2 bytes  
 Primul byte raportează dacă urmează o coliziune.  
 Al doilea byte este direcția posibilei coliziuni.  
 Master-ul va citi constant primul primul byte, dacă urmează o coliziune se va opri mașina pe loc, altfel continuă execuția normal.  
