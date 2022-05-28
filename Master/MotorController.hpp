@@ -1,5 +1,6 @@
 #pragma once
 #include "common.hpp"
+#include <mcp2515.h>
 
 enum class MovingDirection {
   STOPPED,
@@ -27,10 +28,14 @@ private:
 
   void execute_IRinput_task();
 
+  void CAN_handle_task();
+
   void move_forward();
   void move_backward();
   void move_left();
   void move_right();
   void move_stop();
+
+  void CAN_read(can_frame *);
   
 };

@@ -11,4 +11,4 @@ typedef unsigned long    uint32;
  * Definitions
  */
 // Switch for serial printing (debugging)
-//#define PROJECT_DEBUGGING_ENABLED
+#define PROJECT_DEBUGGING_ENABLED

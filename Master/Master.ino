@@ -1,9 +1,12 @@
 #include "MotorController.hpp"
 
 MotorController mc;
+
 void setup() {
   mc.init();
-  Serial.begin(9600); 
+#ifdef PROJECT_DEBUGGING_ENABLED
+  Serial.begin(115200);
+#endif
 }
 
 void loop() {
