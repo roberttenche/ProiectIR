@@ -106,9 +106,6 @@ void MotorController::CAN_handle_task(){
           move_stop();
       }
 
-
-      
-
       break;
       
     }
@@ -125,19 +122,7 @@ void MotorController::CAN_handle_task(){
 
 void MotorController::CAN_read(can_frame * can_msg) {
   if(mcp2515.readMessage(can_msg) == MCP2515::ERROR_OK) {
-//#ifdef PROJECT_DEBUGGING_ENABLED
-//    Serial.print("ID: ");
-//    Serial.println(can_msg->can_id, HEX);
-//    Serial.print("DLC: ");
-//    Serial.println(can_msg->can_dlc);
-//    Serial.print("DATA: ");
-//    for(int i = 0 ; i < can_msg->can_dlc; i++){
-//      Serial.print(can_msg->data[i]);
-//      Serial.print(" ");
-//    }
-//    Serial.println();
-//#endif
-
+    
   }
 }
 

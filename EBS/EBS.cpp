@@ -82,9 +82,7 @@ void EBS::main_task() {
 
   if(move_forward_allowed && move_backward_allowed) {
     CAN_send_ok();
-  } else if (!(move_forward_allowed == false || move_backward_allowed == false)) {
-    CAN_send_fatal_error();
-  } 
+  }
 
 #ifdef PROJECT_DEBUGGING_ENABLED
   Serial.print("FRONT: ");
